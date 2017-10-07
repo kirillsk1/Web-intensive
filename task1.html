@@ -1,0 +1,43 @@
+<html>
+<head>
+	<title>Cells</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<button onclick="changeColorAll()">Инвертировать цвета</button>
+<script>
+function createTable(r, c) {
+	let body = document.body;
+	let tbl = document.createElement('table');
+	tbl.style.border = '1px solid black';
+	for (let i = 0; i < r; ++i) {
+		let tr = tbl.insertRow();
+		for (let j = 0; j < c; ++j) {
+			let td = tr.insertCell();
+			td.className = 'white';
+			td.onclick = changeColor;
+		}
+	}
+	body.appendChild(tbl);
+}
+
+function changeColor() {
+	let cell = event.target;
+	if (cell.className == 'white') {
+		cell.className = 'black';
+	} else {
+		cell.className = 'white';
+	}
+}
+
+function changeColorAll() {
+	let tds = document.getElementsByTagName('td');
+	for (let i = 0; i < tds.length; ++i) {
+		tds[i].click();
+	}
+}
+
+createTable(5, 5);
+</script>
+</body>
+</html>
