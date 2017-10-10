@@ -4,9 +4,15 @@ table {
 	border: 1px solid black;
 }
 
-
 tr, td {
 	border: 1px solid black;
+}
+.invert .white {
+	background-color: black;
+}
+
+.invert .black {
+	background-color: white;
 }
 
 .white {
