@@ -1,0 +1,24 @@
+table {
+	width: 500px;
+	height: 500px;
+	border: 1px solid black;
+}
+
+tr, td {
+	border: 1px solid black;
+}
+.invert .white {
+	background-color: black;
+}
+
+.invert .black {
+	background-color: white;
+}
+
+.white {
+	background-color: white;
+}
+
+.black {
+	background-color: black;
+}
