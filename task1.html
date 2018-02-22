@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Cells</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<button onclick="newGame()">Начать заново</button>
+		<script type="text/x-template" id="template-popup">
+			<div class="popup-body">
+					{{text}}
+					<button type="button" onclick="newGame()">Новая игра</button>
+			</div>
+		</script>
+		
+		<script src="minerGame.js"></script>
+	</body>
+</html>

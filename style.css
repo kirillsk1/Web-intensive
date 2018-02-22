@@ -1,0 +1,61 @@
+:root {
+  free-cell-color: #bad6af;
+	--bomb-cell-color: #ffbaba;
+	--check-cell-color: #cccccc;
+	--flag-cell-color: fbfcc4;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+table {
+	border: 1px solid black;
+	table-layout: fixed;
+	margin-top: 25px;
+}
+
+tr, td {
+	border: 1px solid black;
+	font-size: 30px;
+	text-align: center;
+	
+}
+
+td {
+	width: 50px;
+	height: 50px;
+}
+
+
+.bomb {
+	background-color: var(--bomb-cell-color);
+}
+
+.check, .free {
+	background-color: var(--check-cell-color);
+}
+
+.flag {
+	background-color: var(--flag-cell-color);
+}
+
+.popup-body {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	left: 40%;
+	top: 40%;
+	font-size: 25px;
+	background-color: white;
+	border: 1px solid black;
+	padding: 50px;
+}
+
+
+.popup-body button {
+	margin-top: 25px;
+}
